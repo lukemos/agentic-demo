@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [helloWorld, setHelloWorld] = useState('Hello World');
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,6 +14,17 @@ function App() {
         <p className="subtitle">
           Edit <code>src/App.js</code> and push to deploy automatically!
         </p>
+
+        <div className="hello-world-field">
+          <label htmlFor="hello-world-input">Hello World Field</label>
+          <input
+            id="hello-world-input"
+            type="text"
+            value={helloWorld}
+            onChange={(event) => setHelloWorld(event.target.value)}
+          />
+        </div>
+
         <div className="features">
           <div className="feature-card">
             <h3>🚀 Auto Deploy</h3>

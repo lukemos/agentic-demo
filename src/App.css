@@ -63,3 +63,24 @@ code {
   font-size: 0.9rem;
   opacity: 0.9;
 }
+
+.hello-world-field {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.hello-world-field label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.hello-world-field input {
+  width: min(360px, 80vw);
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+  font-size: 1rem;
+}
