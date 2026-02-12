@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   const [helloWorld, setHelloWorld] = useState('Hello World');
+  const [helloWorldSecond, setHelloWorldSecond] = useState('Hello World 2');
 
   return (
     <div className="App">
@@ -22,6 +23,16 @@ function App() {
             type="text"
             value={helloWorld}
             onChange={(event) => setHelloWorld(event.target.value)}
+          />
+        </div>
+
+        <div className="hello-world-field">
+          <label htmlFor="hello-world-input-second">Second Hello World Field</label>
+          <input
+            id="hello-world-input-second"
+            type="text"
+            value={helloWorldSecond}
+            onChange={(event) => setHelloWorldSecond(event.target.value)}
           />
         </div>
 
